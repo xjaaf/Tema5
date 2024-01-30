@@ -1,5 +1,5 @@
 <?php
-class Animal
+abstract class Animal
 {
     public $nombre;
 
@@ -7,10 +7,8 @@ class Animal
     {
         $this->nombre = $nombre;
     }
-    public function makeSound()
-    {
-        echo "Sonido animal llamado";
-    }
+    abstract public function makeSound();
+  
 }
 
 class Perro extends Animal {
